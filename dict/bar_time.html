@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Chart</title>
+		<script
+			type="text/javascript"
+			src="https://assets.pyecharts.org/assets/echarts.min.js"
+		></script>
+	</head>
+	<body>
+		<div
+			id="5e7a4d6a5e9d418d985bdb085df6fb37"
+			class="chart-container"
+			style="width: 1200px; height: 550px"
+		></div>
+		<script>
+			var chart_5e7a4d6a5e9d418d985bdb085df6fb37 = echarts.init(
+				document.getElementById("5e7a4d6a5e9d418d985bdb085df6fb37"),
+				"white",
+				{ renderer: "canvas" },
+			);
+			var option_5e7a4d6a5e9d418d985bdb085df6fb37 = {
+				animation: true,
+				animationThreshold: 2000,
+				animationDuration: 1000,
+				animationEasing: "cubicOut",
+				animationDelay: 0,
+				animationDurationUpdate: 300,
+				animationEasingUpdate: "cubicOut",
+				animationDelayUpdate: 0,
+				color: [
+					"#c23531",
+					"#2f4554",
+					"#61a0a8",
+					"#d48265",
+					"#749f83",
+					"#ca8622",
+					"#bda29a",
+					"#6e7074",
+					"#546570",
+					"#c4ccd3",
+					"#f05b72",
+					"#ef5b9c",
+					"#f47920",
+					"#905a3d",
+					"#fab27b",
+					"#2a5caa",
+					"#444693",
+					"#726930",
+					"#b2d235",
+					"#6d8346",
+					"#ac6767",
+					"#1d953f",
+					"#6950a1",
+					"#918597",
+				],
+				series: [
+					{
+						type: "bar",
+						name: "number",
+						legendHoverLink: true,
+						data: [
+							266, 986, 42, 97, 602, 167, 98, 145, 47, 51, 34, 36, 18, 2, 13, 36, 75, 9, 848, 31,
+							13, 20, 5, 9, 25, 2, 6, 6, 51, 5, 25, 2, 56, 2, 33,
+						],
+						showBackground: false,
+						barMinHeight: 0,
+						barCategoryGap: "20%",
+						barGap: "30%",
+						large: false,
+						largeThreshold: 400,
+						seriesLayoutBy: "column",
+						datasetIndex: 0,
+						clip: true,
+						zlevel: 0,
+						z: 2,
+						label: {
+							show: false,
+							position: "top",
+							margin: 8,
+						},
+						markLine: {
+							silent: false,
+							precision: 2,
+							label: {
+								show: true,
+								position: "top",
+								margin: 8,
+							},
+							data: [
+								{
+									name: "\u6700\u5c0f\u503c",
+									type: "min",
+								},
+								{
+									name: "\u6700\u5927\u503c",
+									type: "max",
+								},
+								{
+									name: "\u5e73\u5747\u503c",
+									type: "average",
+								},
+							],
+						},
+						rippleEffect: {
+							show: true,
+							brushType: "stroke",
+							scale: 2.5,
+							period: 4,
+						},
+					},
+				],
+				legend: [
+					{
+						data: ["number"],
+						selected: {
+							number: true,
+						},
+						show: false,
+						padding: 5,
+						itemGap: 10,
+						itemWidth: 25,
+						itemHeight: 14,
+					},
+				],
+				tooltip: {
+					show: true,
+					trigger: "item",
+					triggerOn: "mousemove|click",
+					axisPointer: {
+						type: "line",
+					},
+					showContent: true,
+					alwaysShowContent: false,
+					showDelay: 0,
+					hideDelay: 100,
+					textStyle: {
+						fontSize: 14,
+					},
+					borderWidth: 0,
+					padding: 5,
+				},
+				xAxis: [
+					{
+						name: "x\u8f74",
+						show: true,
+						scale: false,
+						nameLocation: "end",
+						nameGap: 15,
+						gridIndex: 0,
+						axisLabel: {
+							show: true,
+							position: "top",
+							rotate: 25,
+							margin: 8,
+						},
+						inverse: false,
+						offset: 0,
+						splitNumber: 5,
+						minInterval: 0,
+						splitLine: {
+							show: false,
+							lineStyle: {
+								show: true,
+								width: 1,
+								opacity: 1,
+								curveness: 0,
+								type: "solid",
+							},
+						},
+						data: [
+							0.05, 0.07, 0.08, 0.09, 0.1, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.2,
+							0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3, 0.31, 0.32, 0.33, 0.34,
+							0.35, 0.36, 0.37, 0.38, 0.39, 0.4, 0.41,
+						],
+					},
+				],
+				yAxis: [
+					{
+						name: "y\u8f74",
+						show: true,
+						scale: false,
+						nameLocation: "end",
+						nameGap: 15,
+						gridIndex: 0,
+						inverse: false,
+						offset: 0,
+						splitNumber: 5,
+						minInterval: 0,
+						splitLine: {
+							show: false,
+							lineStyle: {
+								show: true,
+								width: 1,
+								opacity: 1,
+								curveness: 0,
+								type: "solid",
+							},
+						},
+					},
+				],
+				title: [
+					{
+						text: "bar Chart",
+						subtext: "\u6253\u6298\u56fe",
+						padding: 5,
+						itemGap: 10,
+					},
+				],
+				toolbox: {
+					show: true,
+					orient: "vertical",
+					itemSize: 15,
+					itemGap: 10,
+					left: "91%",
+					feature: {
+						saveAsImage: {
+							type: "png",
+							backgroundColor: "auto",
+							connectedBackgroundColor: "#fff",
+							show: true,
+							title: "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+							pixelRatio: 1,
+						},
+						restore: {
+							show: true,
+							title: "\u8fd8\u539f",
+						},
+						dataView: {
+							show: true,
+							title: "\u6570\u636e\u89c6\u56fe",
+							readOnly: false,
+							lang: ["\u6570\u636e\u89c6\u56fe", "\u5173\u95ed", "\u5237\u65b0"],
+							backgroundColor: "#fff",
+							textareaColor: "#fff",
+							textareaBorderColor: "#333",
+							textColor: "#000",
+							buttonColor: "#c23531",
+							buttonTextColor: "#fff",
+						},
+						dataZoom: {
+							show: true,
+							title: {
+								zoom: "\u533a\u57df\u7f29\u653e",
+								back: "\u533a\u57df\u7f29\u653e\u8fd8\u539f",
+							},
+							icon: {},
+							xAxisIndex: false,
+							yAxisIndex: false,
+							filterMode: "filter",
+						},
+						magicType: {
+							show: true,
+							type: ["line", "bar", "stack", "tiled"],
+							title: {
+								line: "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+								bar: "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+								stack: "\u5207\u6362\u4e3a\u5806\u53e0",
+								tiled: "\u5207\u6362\u4e3a\u5e73\u94fa",
+							},
+							icon: {},
+						},
+						brush: {
+							icon: {},
+							title: {
+								rect: "\u77e9\u5f62\u9009\u62e9",
+								polygon: "\u5708\u9009",
+								lineX: "\u6a2a\u5411\u9009\u62e9",
+								lineY: "\u7eb5\u5411\u9009\u62e9",
+								keep: "\u4fdd\u6301\u9009\u62e9",
+								clear: "\u6e05\u9664\u9009\u62e9",
+							},
+						},
+					},
+				},
+				visualMap: {
+					show: true,
+					type: "continuous",
+					min: 0,
+					max: 986,
+					inRange: {
+						color: ["#50a3ba", "#eac763", "#d94e5d"],
+					},
+					calculable: true,
+					inverse: false,
+					splitNumber: 5,
+					orient: "vertical",
+					showLabel: true,
+					itemWidth: 20,
+					itemHeight: 140,
+					borderWidth: 0,
+				},
+				dataZoom: [
+					{
+						show: true,
+						type: "slider",
+						realtime: true,
+						start: 20,
+						end: 80,
+						orient: "horizontal",
+						zoomLock: false,
+						filterMode: "filter",
+					},
+					{
+						show: true,
+						type: "inside",
+						realtime: true,
+						start: 20,
+						end: 80,
+						orient: "horizontal",
+						zoomLock: false,
+						filterMode: "filter",
+					},
+				],
+				brush: {
+					toolbox: ["rect", "polygon", "keep", "clear"],
+					brushType: "rect",
+					brushMode: "single",
+					transformable: true,
+					brushStyle: {
+						borderWidth: 1,
+						color: "rgba(120,140,180,0.3)",
+						borderColor: "rgba(120,140,180,0.8)",
+					},
+					throttleType: "fixRate",
+					throttleDelay: 0,
+					removeOnClick: true,
+				},
+			};
+			chart_5e7a4d6a5e9d418d985bdb085df6fb37.setOption(option_5e7a4d6a5e9d418d985bdb085df6fb37);
+		</script>
+	</body>
+</html>
