@@ -1,6 +1,6 @@
 import sys
 from typing import Union
-from .__log import Log
+from luck.__log import Log
 import re
 
 __BASE_LOG = Log()

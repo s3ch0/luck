@@ -6,13 +6,11 @@
 # @Software: Neovim
 # @Blog    : http://www.zhouhaobusy.com
 
-import sys
-from .utils import get_terminal_width
-from .embellish import Color
-from .embellish import printf
 import inspect
 import os
-from .consts import STATIC_LOG_STYLE, RUNNING_ENVIRONMENT
+from luck.utils import get_terminal_width
+from luck.embellish import Color,printf
+from luck.consts import STATIC_LOG_STYLE, RUNNING_ENVIRONMENT
 
 
 class Log:

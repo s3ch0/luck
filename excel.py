@@ -13,8 +13,8 @@ this file is used to read and write excel file
 import openpyxl
 import xlrd
 import xlwt
-from .__log import *
-from .__base import file_suffix
+from luck.__log import *
+from luck.__base import file_suffix
 
 EXCEL_LOG = Log()
 

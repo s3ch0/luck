@@ -1,10 +1,10 @@
 from __future__ import absolute_import
 from typing import Union,Tuple,Optional,List
 import os
-from .embellish import Color
+from luck.embellish import Color
 import six
 import struct
-from .consts import *
+from luck.consts import *
 from random import choice
 MY_COLOR = Color()
 

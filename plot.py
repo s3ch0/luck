@@ -4,8 +4,8 @@ from pyecharts import options as opts
 from pyecharts.charts import Bar, Pie, Line, Scatter, chart
 from pyecharts.globals import ThemeType
 
-from .__base import *
-from .embellish import printf
+from luck.__base import *
+from luck.embellish import printf
 
 PLOT_LOG = Log()
 
@@ -290,7 +290,7 @@ class Chart:
 
 class BarChart(Chart):
     """
-    This class will be used to plot the bar chart
+# TODO    This class will be used to plot the bar chart
     """
 
     def __init__(self):
