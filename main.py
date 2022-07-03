@@ -1,7 +1,7 @@
 from IPython import start_ipython
 from luck.utils import _luck_logo
 from luck.embellish import Color
-from typing import Dict,Any
+from typing import Dict, Any
 
 import os
 from IPython.terminal.prompts import Prompts, Token
